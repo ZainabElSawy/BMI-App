@@ -36,8 +36,6 @@ class ResultPage extends StatelessWidget {
       ),
       body: SizedBox(
         child: ListView(
-          //mainAxisAlignment: MainAxisAlignment.center,
-          //crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(
               width: 300,

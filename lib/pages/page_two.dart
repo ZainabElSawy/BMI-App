@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:new_bmi/generated/l10n.dart';
 class PageTwo extends StatelessWidget {
   const PageTwo({super.key});
 
@@ -13,16 +14,16 @@ class PageTwo extends StatelessWidget {
           "images/s1.jpg",
           fit: BoxFit.fill,
         ),
-        const Text(
-          "   Your Progess",
-          style: TextStyle(
+         Text(
+          S.of(context).Title_OnBoarding,
+          style: const TextStyle(
               color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold),
         ),
-        const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 17, vertical: 18),
+        Padding(
+          padding:const  EdgeInsets.symmetric(horizontal: 17, vertical: 18),
           child: Text(
-            "As a guide, an average man needs around 2,500kcal (10,500kj) a day to maintain a healthy body weight.",
-            style: TextStyle(
+            S.of(context).Content_OnBoarding,
+            style:const  TextStyle(
               height: 1.5,
               color: Color.fromRGBO(154, 150, 150, 1),
               fontSize: 16,

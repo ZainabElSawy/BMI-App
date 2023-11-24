@@ -5,6 +5,7 @@ import 'package:new_bmi/pages/page_one.dart';
 import 'package:new_bmi/pages/page_three.dart';
 import 'package:new_bmi/pages/page_two.dart';
 
+import 'package:new_bmi/generated/l10n.dart';
 import 'pages/input_page.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -14,7 +15,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final List<Widget> pages =const [
+  final List<Widget> pages = const [
     PageOne(),
     PageTwo(),
     PageThree(),
@@ -115,16 +116,16 @@ class _MyHomePageState extends State<MyHomePage> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(23.0),
                         ),
-                        child: const Row(
+                        child: Row(
                           children: [
                             Text(
-                              "Start  ",
-                              style: TextStyle(
+                              S.of(context).Start,
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 15),
                             ),
-                            Icon(
+                            const Icon(
                               Icons.arrow_right_alt,
                               color: Colors.white,
                               size: 28,
